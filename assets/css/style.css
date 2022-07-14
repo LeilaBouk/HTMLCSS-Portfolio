@@ -1,5 +1,94 @@
+:root {
+    --forest: #39b263;
+    --yolk: #fef092;
+}
+
 * {
     /* background-image: url("../images/test.gif"); */
-    background-color: #d8ecfc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     /* color: white; */
 }
+
+body {
+    color: black;
+}
+
+/* NAV STYLES */
+
+header {
+    padding: 35px 20px;
+    background-color: var(--forest);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header a{
+      text-decoration: none;
+      color: var(--yolk);
+  }
+
+  header nav {
+      margin: 30px;
+  }
+
+  header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+  }
+
+  header nav ul li a {
+      margin: 0 30px;
+      font-size: 2.5vw;
+  }
+
+  /* HOME */
+
+  #banner {
+    padding: 300px 30px;
+    background-image: url("../images/test.gif");
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:white;
+  }
+
+  /* PORTFOLIO */
+
+  #projects {
+    padding: 200px 30px;
+    background-color: #466060;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:white;
+  }
+
+  /* ABOUT */
+
+  #about {
+    padding: 200px 30px;
+    background-color: #873d3d;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:white;
+  }
+
+  /* CONTACT */
+
+  #contact {
+    padding: 200px 30px;
+    background-color: #4c6046;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:white;
+  }
+
+  /* FOOTER */
+
+  
