@@ -1,6 +1,13 @@
 :root {
-    --forest: #39b263;
-    --yolk: #fef092;
+    --darkBlue: #50557c;
+    --red: #ed6d6f;
+    --darkRed: #7c3637;
+    --medBlue: #686e9e;
+    --lightBlue: #838bc4;
+    --paleBlue: #d2d5e8;
+    --darkerBlue: #30344d;
+    --yellow: #ffe1a1;
+    --forest: #4c6046;
 }
 
 * {
@@ -19,7 +26,7 @@ body {
 
 header {
     padding: 35px 20px;
-    background-color: var(--forest);
+    background-color: var(--darkBlue);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,8 +34,12 @@ header {
 
   header a{
       text-decoration: none;
-      color: var(--yolk);
+      color: var(--yellow);
   }
+
+  nav a:hover {
+    color: var(--darkerBlue);
+}
 
   header nav {
       margin: 30px;
@@ -50,22 +61,25 @@ header {
   #banner {
     z-index: -2;
     padding: 300px 30px;
-    background-image: url("../images/test.gif");
+    background-image: url("../images/BackgroundImgTest.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color:white;
+    color:black;
   }
 
   .introduction {
     padding: 20px;
+    background-color: white;
+    border-radius: 40px;
   }
 
   /* PORTFOLIO */
 
   #projects {
     padding: 50px 30px;
-    background-color: #466060;
+    background-color: var(--darkRed);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -77,13 +91,56 @@ header {
     font-size: 50px;
     color: white;
     text-decoration: underline;
+    padding-bottom: 40px;
   }
 
   .mainProj img{
-    padding: 20px;
+    margin: 30px, 30px;
     width: 100%;
     height: auto;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    color: black;
+    border: 5px;
+    border-style: solid;
   }
+
+.center {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+   top: -40%;
+    text-align: center;
+}
+
+.row p {
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.row:hover img {
+    cursor: pointer;
+}
+
+.mainProj:hover img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.mainProj:hover .center {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.info {
+    color: white;
+    font-size: 36px;
+    text-decoration: underline;
+}
 
 .row {
     display: flex;
@@ -91,7 +148,9 @@ header {
 
 .row img {
     width: 100%;
-    padding: 5px;
+    color: black;
+    border: 5px;
+    border-style: solid;
 }
 
 .column {
@@ -103,7 +162,7 @@ header {
 
   #about {
     padding: 50px 30px;
-    background-color: #873d3d;
+    background-color: var(--lightBlue);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -139,8 +198,8 @@ header {
   /* CONTACT */
 
   #contact {
-    padding: 200px 30px;
-    background-color: #4c6046;
+    padding: 50px 30px;
+    background-color: var(--forest);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -166,8 +225,8 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: #873d3d;
-    color: white;
+    background-color: var(--paleBlue);
+    color: var(--darkBlue);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -176,9 +235,10 @@ input[type=text], select, textarea {
   
  
   input[type=submit]:hover {
-    background-color: #421c1c;
+    background-color: var(--medBlue);
+    color: white;
     border-style: groove;
-    border-color: #e7b257;
+    border-color: var(--yellow);
   }
 
   .contactInfo {
@@ -187,5 +247,15 @@ input[type=text], select, textarea {
   }
 
   /* FOOTER */
+
+  #footer {
+    padding: 50px 30px;
+    background-color: var(--darkerBlue);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:white;
+  }
+
 
   
