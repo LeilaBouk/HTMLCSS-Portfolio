@@ -4,6 +4,10 @@
 
 ![Portfolio website screenshot](./assets/images/SiteScreenshot.png)
 
+## Deployed website link 🤖
+
+https://leilabouk.github.io/HTMLCSS-Portfolio/
+
 ## About this project 🐊
 
 This is a portfolio was created to showcase my coding abilities. 
