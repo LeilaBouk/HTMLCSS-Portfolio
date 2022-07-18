@@ -6,8 +6,10 @@
 
 ## About this project 🐊
 
-This is a portfolio was created to showcase my coding coding abilities. 
-This project was built with HTML and CSS.
+This is a portfolio was created to showcase my coding abilities. 
+
+## Languages 💬
+HTML + CSS
 
 ## Usage 🐗
 
