@@ -22,6 +22,13 @@ body {
     color: black;
 }
 
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
+
 /* NAV STYLES */
 
 header {
@@ -59,21 +66,42 @@ header {
   /* HOME */
 
   #banner {
-    z-index: -2;
-    padding: 300px 30px;
-    background-image: url("../images/BackgroundImgTest.jpg");
+    /* padding: 300px 30px; */
+    /* background-image: url("../images/Shogunyan.png"); */
     background-size: cover;
     display: flex;
     justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 150%;
+    transform-style: preserve-3d;
+    /* THIS SETS THIS SECTION AS BEHIND EVERYTHING */
+    z-index: -1; 
     flex-wrap: wrap;
     color:black;
   }
 
-  .introduction {
-    padding: 20px;
-    background-color: white;
-    border-radius: 40px;
+  .bg {
+    transform: translateZ(-10px) scale(2);
   }
+
+  .fg {
+    transform: translateZ(-5px);
+  }
+
+  .bg, .fg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+.title {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 5px var(--darkBlue);
+}
 
   /* PORTFOLIO */
 
@@ -183,6 +211,7 @@ header {
     float: left;
     height: auto;
     display: flex;
+    border-radius: 200px;
 }
 
 .iPort {
@@ -237,8 +266,6 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: var(--medBlue);
     color: white;
-    border-style: groove;
-    border-color: var(--yellow);
   }
 
   .contactInfo {
@@ -252,10 +279,20 @@ input[type=text], select, textarea {
     padding: 50px 30px;
     background-color: var(--darkerBlue);
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     color:white;
+    justify-content: center;
   }
+
+  .socials img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
+
+  .socials:hover img{
+    cursor: pointer;
+}
 
 
   
