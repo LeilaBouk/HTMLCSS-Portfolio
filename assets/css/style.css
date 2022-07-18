@@ -3,9 +3,9 @@
     --red: #ed6d6f;
     --darkRed: #7c3637;
     --medBlue: #686e9e;
-    --lightBlue: #838bc4;
+    --lightBlue: #828ac4;
     --paleBlue: #d2d5e8;
-    --darkerBlue: #30344d;
+    --darkerBlue: #1e2132;
     --yellow: #ffe1a1;
     --forest: #4c6046;
 }
@@ -41,11 +41,11 @@ header {
 
   header a{
       text-decoration: none;
-      color: var(--yellow);
+      color: var(--darkerBlue);
   }
 
   nav a:hover {
-    color: var(--darkerBlue);
+    color: var(--yellow);
 }
 
   header nav {
@@ -85,11 +85,15 @@ header {
     transform: translateZ(-10px) scale(2);
   }
 
-  .fg {
-    transform: translateZ(-5px);
+  .mg {
+    transform: translateZ(-5px) scale(1.5);
   }
 
-  .bg, .fg {
+  .fg {
+    transform: translateZ(-1px);
+  }
+
+  .bg, .fg, .mg {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -99,8 +103,8 @@ header {
 
 .title {
     font-size: 4rem;
-    color: white;
-    text-shadow: 0 0 5px var(--darkBlue);
+    color: var(--darkBlue);
+    text-shadow: 0 0 5px white;
 }
 
   /* PORTFOLIO */
@@ -198,7 +202,7 @@ header {
   }
 
   #about h2 {
-    position: flex;
+    position: absolute;
     font-size: 50px;
     color: white;
     text-decoration: underline;
@@ -206,8 +210,8 @@ header {
 
   .profile img {
     position: relative;
-    padding: 40px;
-    width: 30%;
+    padding: 80px;
+    width: 50%;
     float: left;
     height: auto;
     display: flex;
@@ -220,7 +224,7 @@ header {
 }
 
 .profile p {
-    padding: 40px;
+    padding: 80px;
     font-size: 30px;
 }
 
