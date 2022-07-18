@@ -7,6 +7,7 @@
 ## About this project 🐊
 
 This is a portfolio was created to showcase my coding abilities. 
+All illustrated assets were created by me, for my personal use only. 
 
 ## Languages 💬
 HTML + CSS
